@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="confetti.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="modal.css">
+  <title>Bora Treinar!</title>
+  <style>
+    :root {
+      --primary: #ffad12;
+      --light-gray: #e1e1e1;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="container-root">
+    <div>
+      <h1 class="title center">FALA AEEE MEU <span class="font-primary">GYMBRO</span>, SOU EU DE NOVO. </h1>
+      <p class="title center font-primary">BORA TREINAR?</p>
+    </div>
+  </div>
+
+  <button type="button" id="sim" class="button-52" data-toggle="modal" data-target="#scaleModal">SIM</button>
+  <button type="button" id="nao" class="button-52" >NÃO</button>
+
+  <!--Fade Centered Modal -->
+  <div class="modal fade-centered" id="scaleModal" tabindex="-1" role="dialog" aria-labelledby="scaleModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Aeee!!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="reset()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>💪💪💪</h3>
+          <p>VAMO SAIRRR DA JAULAAAAA PORR</p>
+        </div>
+        <div class="modal-footer">
+          <button id="#fechar" type="button" class="btn btn-primary btn-yellow" data-dismiss="modal" onclick="reset()">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fade Centered Modal -->
+  <div class="js-container container" style="top:0px;left:0px;position:fixed;display: none;"></div>
+
+  <script defer type="text/javascript" src="button-animation.js"></script>
+  <script defer type="text/javascript" src="confetti.js"></script>
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

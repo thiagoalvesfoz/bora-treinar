@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body {
+  font-family: 'Raleway', 'Ysabeau Infant', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(https://e0.pxfuel.com/wallpapers/118/113/desktop-wallpaper-gym-black.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #000 !important;
+}
+
+.container-root {
+  min-height: calc(100vh - 250px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.container-root div {
+  max-width: 1280px;
+}
+
+/* TITLE */
+
+.title {
+  font-size: 2.5rem;
+  letter-spacing: .25em; 
+  color: white !Important;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.font-primary {
+  color: var(--primary) !important;
+}
+
+
+/* BUTTONS */
+
+button#sim, button#nao {
+    font-family: 'Raleway', 'Ysabeau Infant', sans-serif !important;
+    font-size: 24px !important;;
+    position: absolute;
+    z-index: 1;
+}
+
+#sim {
+  position: absolute;
+}
+
+#nao {
+  position: absolute;
+  transition: 0.1s;
+}
+
+.btn-yellow {
+  color: black !important;
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+button styles
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border-radius: 0 !important;
+  border: 1px solid black !important;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: var(--primary);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+#sim.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 1.8rem !important;
+  }
+  
+  .button-52 {
+    font-size: 20px !important;;
+    padding: 5px 25px 5px !important;;
+    border-radius: 0 !important;;
+    border: 1px solid black !important;;
+    background-color: white !important;;
+  }
+  
+  .button-52:after {
+    top: 5px;
+    left: 5px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px !important;;
+  }
+}
